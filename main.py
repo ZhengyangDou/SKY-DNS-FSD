@@ -14,7 +14,7 @@ class TestResolver:
         print(qname, qtype, userip)
         if qname == 'sim.trish.top' and QTYPE[qtype] == 'A':
             print(get_nearest_server(userip))
-            answer = RR(rname=qname, ttl=60, rdata=A('182.150.1.25'))
+            answer = RR(rname=qname, ttl=60, rdata=A('、'))
             reply.add_answer(answer)
             return reply
         ## 调价其他的域名对应的IP，在这里加if语句增加
